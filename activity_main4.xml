@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity4">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="175dp"
+        android:fontFamily="monospace"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:text="Register"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="125dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.33"
+            android:fontFamily="cursive"
+            android:hint="Username"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/psw"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.33"
+            android:fontFamily="cursive"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="goToLogin"
+        android:text="REGISTER" />
+
+    <Button
+        android:id="@+id/back"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="145dp"
+        android:onClick="goBack"
+        android:text="Back"
+        android:textColor="#260027"
+        app:icon="@drawable/baseline_keyboard_arrow_left_black_24dp" />
+
+</LinearLayout>

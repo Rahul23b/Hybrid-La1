@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity5">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="75dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="350dp"
+            android:layout_height="91dp"
+            android:layout_weight="0.25"
+            android:fontFamily="casual"
+            android:onClick="userAdd"
+            android:text="ADD "
+            android:textAlignment="textStart"
+            android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="350dp"
+            android:layout_height="99dp"
+            android:layout_weight="0.25"
+            android:fontFamily="casual"
+            android:onClick="userDelete"
+            android:text="DELETE "
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="350dp"
+            android:layout_height="99dp"
+            android:layout_weight="0.25"
+            android:fontFamily="casual"
+            android:onClick="userUpdate"
+            android:text="UPDATE "
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/display"
+            android:layout_width="350dp"
+            android:layout_height="97dp"
+            android:layout_weight="0.25"
+            android:fontFamily="casual"
+            android:onClick="userDisplay"
+            android:text="DISPLAY"
+            android:textAlignment="viewStart"
+            android:textStyle="bold" />
+
+        <Button
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="350dp"
+            android:layout_height="67dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:fontFamily="monospace"
+            android:onClick="goBack"
+            android:text="LOGOUT"
+            android:textColor="#260027"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/greetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="175dp"
+        android:fontFamily="@font/open_sans_light"
+        android:text=""
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+</LinearLayout>
